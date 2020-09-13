@@ -126,10 +126,6 @@ namespace CmdTetris
         void Init()
         {
             Console.Title = "CmdTetris";
-            Console.SetWindowSize(Width * 2 + 18, Height + 3);
-            //Console.BufferHeight = Height + 3;
-            //Console.BufferWidth = Width * 2 + 16;
-            Console.CursorVisible = false;
 
             random = new Random();
             direction = 0;
@@ -380,6 +376,11 @@ namespace CmdTetris
 
         void Render()
         {
+            Console.SetWindowSize(Width * 2 + 18, Height + 3);
+            //Console.BufferHeight = Height + 3;
+            //Console.BufferWidth = Width * 2 + 16;
+            Console.CursorVisible = false;
+
             /*    PlayBox    */
             Console.SetCursorPosition(0, 0);
 
